@@ -29,6 +29,10 @@
                   {
                     "title": "Recopilación de información",
                     "path": "recopilacin-de-informacin"
+                  },
+                  {
+                    "title": "Sample",
+                    "path": "sample"
                   }
                 ]
               },
