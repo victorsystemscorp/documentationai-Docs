@@ -1,23 +1,23 @@
 ---
-title: Authentication (Sample)
-description: Sample guidance for authentication and OpenAPI usage.
+title: Autenticación (ejemplo)
+description: Guía de ejemplo para autenticación y uso de OpenAPI en la referencia de tu API.
 ---
 
-## Overview
+## Descripción general
 
-This is sample content. Replace tokens, URLs, headers, and flows with your real authentication requirements.
+Este es contenido de muestra. Reemplaza los tokens, las URL, los encabezados y los flujos con los requisitos reales de autenticación de tu API.
 
 <Callout kind="info">
 
-This site ships with placeholder content for authentication. Update this page and `openapi.yaml` to match your real API before sharing with users.
+Este sitio incluye contenido de marcador de posición para la autenticación. Actualiza esta página y `openapi.yaml` para que coincidan con tu API real antes de compartirla con usuarios.
 
 </Callout>
 
-This API uses OpenAPI to describe endpoints, parameters, and responses. The reference is generated from `openapi.yaml`, so keep that file up to date as your API evolves.
+Esta API usa OpenAPI para describir endpoints, parámetros y respuestas. La referencia se genera a partir de `openapi.yaml`, así que mantén ese archivo actualizado a medida que tu API evoluciona.
 
-## Authentication
+## Autenticación
 
-Use a bearer token in the `Authorization` header for authenticated requests. Replace the base URL and token with values for your own API.
+Usa un token bearer en el encabezado `Authorization` para las solicitudes autenticadas. Reemplaza la URL base y el token con los valores de tu propia API.
 
 ```bash
 curl https://api.example.com/v1/example \
@@ -28,30 +28,30 @@ curl https://api.example.com/v1/example \
   `Bearer YOUR_TOKEN`
 </ParamField>
 
-## Keep OpenAPI in sync
+## Mantener OpenAPI sincronizado
 
-Define your authentication and base settings in `openapi.yaml` so the API Reference stays accurate and consistent.
+Define tu autenticación y la configuración base en `openapi.yaml` para que la referencia de la API se mantenga precisa y coherente.
 
-At a minimum, you should:
+Como mínimo, deberías:
 
-- Define one or more security schemes that describe how clients authenticate (for example, bearer token, API key in a header, or other scheme).
-- Reference those security schemes on operations that require authentication so they are clearly marked as secured.
-- Set the correct base URL and any required global headers (for example, versioning or tenant headers) so example requests are copy-pasteable.
+- Definir uno o más esquemas de seguridad que describan cómo se autentican los clientes (por ejemplo, token bearer, clave de API en un encabezado u otro esquema).
+- Hacer referencia a esos esquemas de seguridad en las operaciones que requieren autenticación para que quede claro cuáles están protegidas.
+- Establecer la URL base correcta y cualquier encabezado global obligatorio (por ejemplo, encabezados de versionado o de inquilino) para que los ejemplos de solicitud se puedan copiar y pegar sin cambios.
 
-When your real authentication flow changes (for example, new header names, token formats, or additional requirements), update `openapi.yaml`. The generated API Reference will then reflect your current auth model without needing to edit each endpoint page by hand.
+Cuando cambie tu flujo real de autenticación (por ejemplo, nuevos nombres de encabezado, formatos de token o requisitos adicionales), actualiza `openapi.yaml`. La referencia de la API generada reflejará entonces tu modelo de autenticación actual sin tener que editar manualmente cada endpoint.
 
-## Using the API reference
+## Uso de la referencia de API
 
-Use the API Reference to explore endpoints, required parameters, and example responses. When you change authentication headers or base URLs, update `openapi.yaml` so the generated reference matches what your clients should use.
+Usa la referencia de la API para explorar endpoints, parámetros obligatorios y respuestas de ejemplo. Cuando cambies los encabezados de autenticación o las URL base, actualiza `openapi.yaml` para que la referencia generada coincida con lo que tus clientes deben utilizar.
 
-## Common mistakes
+## Errores comunes
 
-<Expandable title="Why am I getting a 401?" default-open="false">
+<Expandable title="¿Por qué estoy recibiendo un 401?" default-open="false">
 
-Verify that:
+Verifica que:
 
-- The token is valid and not expired.
-- The token is sent in the `Authorization` header.
-- The header value includes the `Bearer` prefix and a space before the token.
+- El token sea válido y no haya expirado.
+- El token se envíe en el encabezado `Authorization`.
+- El valor del encabezado incluya el prefijo `Bearer` y un espacio antes del token.
 
 </Expandable>

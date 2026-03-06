@@ -1,30 +1,30 @@
 ---
-title: Images
-description: Add screenshots and diagrams with accessible alt text.
+title: Imágenes
+description: Agrega capturas de pantalla y diagramas con texto alternativo accesible.
 ---
 
-## Images
+## Imágenes
 
-Use the `Image` component to add screenshots and diagrams with alt text. Always include descriptive alt text and explicit dimensions to avoid layout shift.
+Usa el componente `Image` para agregar capturas de pantalla y diagramas con texto alternativo. Incluye siempre texto alternativo descriptivo y dimensiones explícitas para evitar cambios de diseño inesperados.
 
-## When to use
+## Cuándo usarlo
 
-Use the `Image` component when you need to:
+Usa el componente `Image` cuando necesites:
 
-- Add product screenshots or UI examples.
-- Include diagrams or architecture overviews.
-- Illustrate step-by-step procedures.
-- Call out visual differences between states (for example, before vs. after).
+- Agregar capturas de producto o ejemplos de interfaz.
+- Incluir diagramas o vistas de arquitectura.
+- Ilustrar procedimientos paso a paso.
+- Resaltar diferencias visuales entre estados (por ejemplo, antes vs. después).
 
-## When not to use
+## Cuándo no usarlo
 
-Avoid using the `Image` component when:
+Evita usar el componente `Image` cuando:
 
-- A short text explanation or table would communicate the idea more clearly.
-- The image contains text that is not repeated elsewhere in the page.
-- The image is purely decorative and does not add meaning. In this case, keep `alt` empty (`""`) so screen readers can ignore it.
+- Una breve explicación de texto o una tabla comuniquen la idea con mayor claridad.
+- La imagen contenga texto que no se repita en otra parte de la página.
+- La imagen sea puramente decorativa y no agregue significado. En este caso, deja `alt` vacío (`""`) para que los lectores de pantalla la ignoren.
 
-## Example
+## Ejemplo
 
 <Image
   src="https://fdjsuzcsbmpqsraaooua.supabase.co/storage/v1/object/public/documentation-images/org-53a37986-2c9e-4094-b9e8-1e1ffae9e9ee/doc-b389b141-ae58-4fd5-91f9-6702fae9ac58/1758638266765-vc81ki2xs9-abstract-image.webp"
@@ -33,30 +33,30 @@ Avoid using the `Image` component when:
   height="343"
 />
 
-## Alt text examples
+## Ejemplos de texto alternativo
 
-Write alt text that describes the content and purpose of the image, not just what it looks like.
+Escribe texto alternativo que describa el contenido y el propósito de la imagen, no solo cómo se ve.
 
-**Good alt text**
+**Buen texto alternativo**
 
-- `alt="User dashboard showing project list with status badges and a New Project button"`
+- `alt="Panel de usuario que muestra la lista de proyectos con insignias de estado y un botón Nuevo proyecto"`
 
-Why it works:
+Por qué funciona:
 
-- Describes the key UI elements.
-- Focuses on what matters for the task (projects, status, action button).
-- Helps someone understand the interface without seeing it.
+- Describe los elementos clave de la interfaz.
+- Se enfoca en lo que importa para la tarea (proyectos, estado, botón de acción).
+- Ayuda a alguien a entender la interfaz sin verla.
 
-**Bad alt text**
+**Mal texto alternativo**
 
-- `alt="Screenshot"`
+- `alt="Captura de pantalla"`
 
-Why it fails:
+Por qué falla:
 
-- Gives no information about what the screenshot shows.
-- Does not help screen reader users.
-- Makes it harder to search or maintain images later.
+- No aporta información sobre lo que muestra la captura.
+- No ayuda a las personas que usan lectores de pantalla.
+- Dificulta buscar o mantener las imágenes más adelante.
 
-## Learn more
+## Más información
 
-Read the full Images guide at [https://documentation.ai/docs/components/images](https://documentation.ai/docs/components/images).
+Lee la guía completa de Imágenes en [https://documentation.ai/docs/components/images](https://documentation.ai/docs/components/images).
