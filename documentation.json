@@ -24,17 +24,25 @@
                 "icon": "home"
               },
               {
-                "group": "Manejo de Caso",
+                "group": "Recopilación de información",
                 "pages": [
                   {
-                    "title": "Recopilación de información",
+                    "title": "Introducción",
                     "path": "recopilacin-de-informacin"
                   },
                   {
-                    "title": "Sample",
+                    "title": "Cuestionario",
                     "path": "sample"
+                  },
+                  {
+                    "title": "Documentos Requeridos",
+                    "path": "documentos-requeridos"
                   }
                 ]
+              },
+              {
+                "group": "Crear el Sumario del Caso",
+                "pages": []
               },
               {
                 "title": "Inicio rápido",
