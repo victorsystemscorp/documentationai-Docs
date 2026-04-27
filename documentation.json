@@ -42,7 +42,8 @@
               },
               {
                 "group": "Crear el Sumario del Caso",
-                "pages": []
+                "pages": [],
+                "public": true
               },
               {
                 "title": "Componentes",
