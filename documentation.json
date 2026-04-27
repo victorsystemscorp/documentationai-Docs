@@ -45,11 +45,6 @@
                 "pages": []
               },
               {
-                "title": "Inicio rápido",
-                "path": "quickstart",
-                "icon": "zap"
-              },
-              {
                 "title": "Componentes",
                 "path": "components",
                 "icon": "code"
